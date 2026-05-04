@@ -1,58 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Trinidad Electric</title>
+  <meta charset="UTF-8">
+  <title>Trinidad Electric & Solar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0b5e2b, #c9a227);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    nav {
+      background: #0b5e2b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .btn {
+      background: #c9a227;
+      color: black;
+      padding: 15px 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #0b5e2b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; max-width: 700px; margin: auto; padding: 20px; line-height: 1.6;">
+<body>
 
-  <h1>⚡ Trinidad Electric</h1>
-  <p><strong>Licensed • Local • Reliable Electrical Services</strong></p>
+<header>
+  <!-- YOUR LOGO -->
+  <img src="IMG_8868.PNG" alt="Trinidad Electric Logo">
 
-  <p>Serving Trinidad, Colorado and surrounding areas including Walsenburg.</p>
+  <h1>Trinidad Electric & Solar</h1>
+  <p>Serving Trinidad, Walsenburg & Surrounding Areas</p>
+</header>
 
-  <hr>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Photos</a>
+  <a href="#">Contact</a>
+</nav>
 
-  <h2>📞 Call Us</h2>
-  <p><a href="tel:7198454836">719-845-4836</a></p>
+<div class="hero">
+  <h1>Reliable Electrical & Solar Services</h1>
+  <p>Residential • Commercial • Solar Installations</p>
+  <a class="btn" href="tel:7198454836">Call Now: (719) 845-4836</a>
+</div>
 
-  <h2>📍 Location</h2>
-  <p>228C W Main St<br>Trinidad, Colorado</p>
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Electrical Work</h3>
+      <p>Repairs, upgrades, and new installations.</p>
+    </div>
 
-  <h2>📧 Email</h2>
-  <p><a href="mailto:karl@tdadconstruction.com">karl@tdadconstruction.com</a></p>
+    <div class="card">
+      <h3>Solar Installation</h3>
+      <p>Save money with clean, efficient solar energy.</p>
+    </div>
 
-  <hr>
+    <div class="card">
+      <h3>Panel Upgrades</h3>
+      <p>Safe and modern electrical panel solutions.</p>
+    </div>
 
-  <h2>🛠 Request Service</h2>
-  <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
+    <div class="card">
+      <h3>Service Calls</h3>
+      <p>Fast, reliable troubleshooting and repairs.</p>
+    </div>
+  </div>
+</section>
 
-  <form action="https://formspree.io/f/xpqbpely" method="POST">
+<section>
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8a7c78d6c3">
+    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+  </div>
+</section>
 
-    <label>Name</label><br>
-    <input type="text" name="name" required style="width:100%; padding:8px;"><br><br>
+<section>
+  <h2>Contact Us</h2>
+  <p>📞 (719) 845-4836</p>
+  <p>📍 Trinidad, CO</p>
+</section>
 
-    <label>Phone</label><br>
-    <input type="text" name="phone" required style="width:100%; padding:8px;"><br><br>
-
-    <label>What do you need help with?</label><br>
-    <textarea name="message" required style="width:100%; padding:8px;"></textarea><br><br>
-
-    <button type="submit" style="padding:10px 20px; font-size:16px;">Send Request</button>
-
-  </form>
-
-  <hr>
-
-  <h3>Our Services</h3>
-  <ul>
-    <li>Residential Wiring</li>
-    <li>Electrical Repairs</li>
-    <li>Panel Upgrades</li>
-    <li>New Installations</li>
-    <li>Troubleshooting & Diagnostics</li>
-  </ul>
+<footer>
+  <p>© 2026 Trinidad Electric & Solar</p>
+</footer>
 
 </body>
 </html>
